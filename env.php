@@ -1,19 +1,10 @@
 <?php
-//Manually Set Environment Variable
+// Simulate environment config
+putenv("APP_ENV=development");
 putenv("APP_VERSION=1.0");
 
-echo getenv("APP_VERSION");
-//Using getenv() (Recommended)
-putenv("APP_VERSION=1.0");
+// Display values
+echo "Environment: " . getenv("APP_ENV") . "<br>";
+echo "Version: " . getenv("APP_VERSION");
 
-echo getenv("APP_VERSION");
-//Store Config Securely
-putenv("DB_PASSWORD=123456");
-
-function connectDB() {
-    $password = getenv("DB_PASSWORD");
-    echo "Password is: " . $password;
-}
-
-connectDB();
 ?>

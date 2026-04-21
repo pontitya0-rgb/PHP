@@ -19,8 +19,8 @@
         $password=$_REQUEST["password"];
 
         if($username== "admin" && $password== 123){   
-            echo htmlspecialchars("Username:$username"."<br>"."Password:$password",ENT_QUOTES,"UTF-8") ;
-            // echo"Username:$username"."<br>"."Password:$password";
+            // echo htmlspecialchars("Username:$username"."<br>"."Password:$password",ENT_QUOTES,"UTF-8") ;
+             echo"Username:$username"."<br>"."Password:$password";
         }
         else{
             echo"Wrong Username and Password"."<br>"."Please Input Again";

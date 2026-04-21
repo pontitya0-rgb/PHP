@@ -1,10 +1,10 @@
 
 <?php
-    //using session_unset()
+    // //using session_unset()
     // session_start(); //it is start session()
     // $_SESSION["a"] = 10;// it is save data or input data
     
-    // // session_unset();// delete veribles
+    // session_unset();// delete veribles
     // if(isset($_SESSION["a"])){
     //     echo $_SESSION["a"];
     // }
@@ -18,9 +18,8 @@
     $_SESSION["a"] = 10;
     $_SESSION["b"] = 20;
 
-    // unset($_SESSION["a"]);//delete verible 1 is delete a=10
-    $_SESSION=array();// delete session array in scrip
-    session_destroy();//delete all session in server
+    unset($_SESSION["a"]);//delete verible 1 is delete a=10
+    // session_destroy();//delete all session in server
     if(isset($_SESSION["a"])){
         echo $_SESSION["a"];
     }
